@@ -2,9 +2,9 @@
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
 net config server /srvcomment:"Windows Azure VM" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-curl -O https://raw.githubusercontent.com/Dahhet/VM/main/ps1/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/DanStones/VM/main/ps1/DisablePasswordComplexity.ps1 > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\winrar-x64-602.exe" https://www.rarlab.com/rar/winrar-x64-602.exe > out.txt 2>&1
-net user administrator Dhlvm@#123456 /add >nul
+net user administrator Dsvm@#123456 /add >nul
 net localgroup administrators administrator /add >nul
 net user administrator /active:yes >nul
 diskperf -Y >nul
